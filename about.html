@@ -7,12 +7,85 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <title>About agms.dev</title>
     <style>
-        /* Add your custom styles here */
+        /* Define color palette */
+        :root {
+            --primary-color: #25274D;
+            --secondary-color: #B9B7BD;
+            --accent-color: #0AC5A8;
+            --dark-primary-color: #1D1F3F;
+            --light-primary-color: #F0F0F0; /* Added lighter shade of primary color */
+        }
+
+        /* Apply font and color styles to elements */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary-color);
+            background-color: white;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--primary-color);
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            background-color: var(--light-primary-color); /* Changed to the lighter shade */
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+        }
+
+        nav a:hover {
+            background-color: var(--accent-color);
+            color: white;
+            border-radius: 5px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: var(--secondary-color);
+            padding: 1rem;
+            text-align: center;
+            color: var(--primary-color);
+            font-size: 0.8rem;
+        }
+    </style>
     </style>
 </head>
 <body>
     <header>
-        <h1>agms projects.dev</h1>
+        <h1>agms projects</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -23,7 +96,7 @@
     </header>
     <main>
         <h2>About agms.dev</h2>
-        <p>This is a landing page for all public facing agms.dev projects.</p>
+        <p>agms.dev was created in 2023</p>
     </main>
     <footer>
         <p>&copy; 2023 agms.dev</p>
