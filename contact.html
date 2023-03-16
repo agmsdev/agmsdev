@@ -11,8 +11,8 @@
         :root {
             --primary-color: #25274D;
             --secondary-color: #B9B7BD;
-            --accent-color: #0AC5A8;
             --dark-primary-color: #1D1F3F;
+            --accent-color: #0AC5A8;
             --light-primary-color: #F0F0F0; /* Added lighter shade of primary color */
         }
 
@@ -94,20 +94,24 @@
         </nav>
     </header>
     <main>
-        <h2>Contact Us</h2>
-        <p>You can contact us by filling out the form below:</p>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name"><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email"><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message"></textarea><br>
-            <input type="submit" value="Submit">
-        </form>
+    <h2>Contact Us</h2>
+    <p>Click the button below to reveal our email address:</p>
+    <button id="reveal-button">Reveal Email Address</button>
+    <p id="email-address" style="display: none;">hello@agms.dev</p>
     </main>
     <footer>
         <p>&copy; 2023 agms.dev</p>
     </footer>
+    <script>
+        function revealEmailAddress() {
+            const emailAddress = document.getElementById("email-address");
+            emailAddress.style.display = "block";
+            document.getElementById("reveal-button").style.display = "none";
+        }
+
+        const revealButton = document.getElementById("reveal-button");
+        revealButton.addEventListener("click", revealEmailAddress);
+    </script>
 </body>
-</html>
+
+</
